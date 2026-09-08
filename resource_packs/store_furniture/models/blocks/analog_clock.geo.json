@@ -1,0 +1,128 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.analog_clock",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8]
+				},
+				{
+					"name": "body",
+					"parent": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, 7],
+							"size": [14, 16, 1],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [14, 16], "material_instance": "clock_body"},
+								"east": {"uv": [8, 16], "uv_size": [1, 16], "material_instance": "clock_body"},
+								"south": {"uv": [14, 0], "uv_size": [14, 16], "material_instance": "clock_body"},
+								"west": {"uv": [9, 16], "uv_size": [1, 16], "material_instance": "clock_body"},
+								"up": {"uv": [10, 16], "uv_size": [14, 1], "material_instance": "clock_body"},
+								"down": {"uv": [10, 18], "uv_size": [14, -1], "material_instance": "clock_body"}
+							}
+						},
+						{
+							"origin": [7, 1, 6],
+							"size": [1, 14, 2],
+							"uv": {
+								"north": {"uv": [10, 18], "uv_size": [1, 14], "material_instance": "clock_body"},
+								"east": {"uv": [0, 16], "uv_size": [2, 14], "material_instance": "clock_body"},
+								"south": {"uv": [11, 18], "uv_size": [1, 14], "material_instance": "clock_body"},
+								"west": {"uv": [2, 16], "uv_size": [2, 14], "material_instance": "clock_body"},
+								"up": {"uv": [20, 25], "uv_size": [1, 2], "material_instance": "clock_body"},
+								"down": {"uv": [21, 27], "uv_size": [1, -2], "material_instance": "clock_body"}
+							}
+						},
+						{
+							"origin": [-8, 1, 6],
+							"size": [1, 14, 2],
+							"uv": {
+								"north": {"uv": [12, 18], "uv_size": [1, 14], "material_instance": "clock_body"},
+								"east": {"uv": [4, 16], "uv_size": [2, 14], "material_instance": "clock_body"},
+								"south": {"uv": [13, 18], "uv_size": [1, 14], "material_instance": "clock_body"},
+								"west": {"uv": [6, 16], "uv_size": [2, 14], "material_instance": "clock_body"},
+								"up": {"uv": [22, 25], "uv_size": [1, 2], "material_instance": "clock_body"},
+								"down": {"uv": [23, 27], "uv_size": [1, -2], "material_instance": "clock_body"}
+							}
+						},
+						{
+							"origin": [-7, 15, 6],
+							"size": [14, 1, 1],
+							"uv": {
+								"north": {"uv": [14, 18], "uv_size": [14, 1], "material_instance": "clock_body"},
+								"east": {"uv": [24, 17], "uv_size": [1, 1], "material_instance": "clock_body"},
+								"south": {"uv": [14, 19], "uv_size": [14, 1], "material_instance": "clock_body"},
+								"west": {"uv": [25, 17], "uv_size": [1, 1], "material_instance": "clock_body"},
+								"up": {"uv": [14, 20], "uv_size": [14, 1], "material_instance": "clock_body"},
+								"down": {"uv": [14, 22], "uv_size": [14, -1], "material_instance": "clock_body"}
+							}
+						},
+						{
+							"origin": [-7, 0, 6],
+							"size": [14, 1, 1],
+							"uv": {
+								"north": {"uv": [14, 22], "uv_size": [14, 1], "material_instance": "clock_body"},
+								"east": {"uv": [26, 17], "uv_size": [1, 1], "material_instance": "clock_body"},
+								"south": {"uv": [14, 23], "uv_size": [14, 1], "material_instance": "clock_body"},
+								"west": {"uv": [26, 25], "uv_size": [1, 1], "material_instance": "clock_body"},
+								"up": {"uv": [14, 24], "uv_size": [14, 1], "material_instance": "clock_body"},
+								"down": {"uv": [24, 17], "uv_size": [14, -1], "material_instance": "clock_body"}
+							}
+						}
+					]
+				},
+				{
+					"name": "hour_hand_0",
+					"parent": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-0.5, 7.5, 6.5],
+							"size": [1, 4, 0.5],
+							"pivot": [0, 8, 0],
+							"rotation": [0, 0, 60],
+							"uv": {
+								"north": {"uv": [16, 25], "uv_size": [1, 4], "material_instance": "hour_hand_0"},
+								"east": {"uv": [24, 25], "uv_size": [0.5, 4], "material_instance": "hour_hand_0"},
+								"south": {"uv": [17, 25], "uv_size": [1, 4], "material_instance": "hour_hand_0"},
+								"west": {"uv": [25, 25], "uv_size": [0.5, 4], "material_instance": "hour_hand_0"},
+								"up": {"uv": [26, 26], "uv_size": [1, 0.5], "material_instance": "hour_hand_0"},
+								"down": {"uv": [27, 17.5], "uv_size": [1, -0.5], "material_instance": "hour_hand_0"}
+							}
+						}
+					]
+				},
+				{
+					"name": "minute_hand_0",
+					"parent": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-0.5, 7.5, 6],
+							"size": [1, 7, 0.5],
+							"uv": {
+								"north": {"uv": [14, 25], "uv_size": [1, 7], "material_instance": "minute_hand_0"},
+								"east": {"uv": [18, 25], "uv_size": [0.5, 7], "material_instance": "minute_hand_0"},
+								"south": {"uv": [15, 25], "uv_size": [1, 7], "material_instance": "minute_hand_0"},
+								"west": {"uv": [19, 25], "uv_size": [0.5, 7], "material_instance": "minute_hand_0"},
+								"up": {"uv": [20, 27], "uv_size": [1, 0.5], "material_instance": "minute_hand_0"},
+								"down": {"uv": [21, 27.5], "uv_size": [1, -0.5], "material_instance": "minute_hand_0"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

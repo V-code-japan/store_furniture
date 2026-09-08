@@ -1,0 +1,98 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "edu:hot_snack",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.65
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:geometry": "geometry.hot_snack",
+      "minecraft:material_instances": {
+        "hot_snack_body": {
+          "texture": "hot_snack_body",
+          "render_method": "blend"
+        },
+        "hot_snack_board": {
+          "texture": "hot_snack_board",
+          "render_method": "blend"
+        },
+        "hot_snack_door": {
+          "texture": "hot_snack_door",
+          "render_method": "blend"
+        },
+        "hot_snack1": {
+          "texture": "hot_snack1",
+          "render_method": "blend"
+        },
+        "hot_snack2": {
+          "texture": "hot_snack2",
+          "render_method": "blend"
+        },
+        "hot_snack3": {
+          "texture": "hot_snack3",
+          "render_method": "blend"
+        },
+        "hot_snack4": {
+          "texture": "hot_snack4",
+          "render_method": "blend"
+        },
+        "hot_snack5": {
+          "texture": "hot_snack5",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:light_emission": 6,
+      "minecraft:map_color": "#5f4a2b",
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      }
+    ]
+  }
+}

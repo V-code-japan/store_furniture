@@ -1,0 +1,12 @@
+tile.edu:walk_in_cooler.name=walk_in_cooler
+tile.edu:walk_in_cooler_top.name=walk_in_cooler_top
+tile.edu:icecream_case_corner.name=icecream_case_corner
+tile.edu:analog_clock.name=analog_clock
+tile.edu:hot_snack.name=hot_snack
+tile.edu:convinience_store_wall.name=convinience_store_wall
+tile.edu:pos.name=pos
+tile.edu:logo.name=logo
+tile.edu:chilled_showcase.name=chilled_showcase
+tile.edu:microwave.name=microwave
+entity.edu:clerk.name=clerk
+item.spawn_egg.entity.edu:clerk.name=Spawn clerk

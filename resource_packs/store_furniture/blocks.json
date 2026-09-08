@@ -1,0 +1,33 @@
+{
+	"format_version": "1.21.0",
+	"edu:microwave": {
+		"sound": "wood"
+	},
+	"edu:chilled_showcase": {
+		"sound": "wood"
+	},
+	"edu:logo": {
+		"sound": "wood"
+	},
+	"edu:pos": {
+		"sound": "wood"
+	},
+	"edu:convinience_store_wall": {
+		"sound": "stone"
+	},
+	"edu:hot_snack": {
+		"sound": "wood"
+	},
+	"edu:analog_clock": {
+		"sound": "wood"
+	},
+	"edu:icecream_case_corner": {
+		"sound": "wood"
+	},
+	"edu:walk_in_cooler_top": {
+		"sound": "wood"
+	},
+	"edu:walk_in_cooler": {
+		"sound": "wood"
+	}
+}
