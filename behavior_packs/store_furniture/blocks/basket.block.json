@@ -7,7 +7,7 @@
         "category": "construction"
       },
       "states": {
-        "edu:vegitable_type": [0, 1, 2]
+        "edu:vegetable_type": [0, 1, 2]
       },
       "traits": {
         "minecraft:placement_direction": {
@@ -30,15 +30,15 @@
           "texture": "basket",
           "render_method": "alpha_test"
         },
-        "vegitable_1": {
+        "vegetable_1": {
           "texture": "basket_apple",
           "render_method": "alpha_test"
         },
-        "vegitable_2": {
+        "vegetable_2": {
           "texture": "basket_carrot",
           "render_method": "alpha_test"
         },
-        "vegitable_3": {
+        "vegetable_3": {
           "texture": "basket_potato",
           "render_method": "alpha_test"
         }
@@ -57,15 +57,15 @@
               "texture": "basket",
               "render_method": "alpha_test"
             },
-            "vegitable_1": {
+            "vegetable_1": {
               "texture": "basket_apple",
               "render_method": "alpha_test"
             },
-            "vegitable_2": {
+            "vegetable_2": {
               "texture": "basket_carrot",
               "render_method": "alpha_test"
             },
-            "vegitable_3": {
+            "vegetable_3": {
               "texture": "basket_potato",
               "render_method": "alpha_test"
             }
@@ -81,15 +81,15 @@
               "texture": "basket",
               "render_method": "alpha_test"
             },
-            "vegitable_1": {
+            "vegetable_1": {
               "texture": "basket_beetroot",
               "render_method": "alpha_test"
             },
-            "vegitable_2": {
+            "vegetable_2": {
               "texture": "basket_chorus_fruit",
               "render_method": "alpha_test"
             },
-            "vegitable_3": {
+            "vegetable_3": {
               "texture": "basket_sweet_berries",
               "render_method": "alpha_test"
             }
@@ -105,15 +105,15 @@
               "texture": "basket",
               "render_method": "alpha_test"
             },
-            "vegitable_1": {
+            "vegetable_1": {
               "texture": "basket_melon",
               "render_method": "alpha_test"
             },
-            "vegitable_2": {
+            "vegetable_2": {
               "texture": "basket_pumpkin",
               "render_method": "alpha_test"
             },
-            "vegitable_3": {
+            "vegetable_3": {
               "texture": "basket_apple_golden",
               "render_method": "alpha_test"
             }

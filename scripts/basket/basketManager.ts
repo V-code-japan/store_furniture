@@ -20,7 +20,7 @@ export class BasketManager {
     }
 
     const perm = ev.block.setPermutation(
-      BlockPermutation.resolve("edu:basket", { "edu:vegitable_type": type, "minecraft:cardinal_direction": dir })
+      BlockPermutation.resolve("edu:basket", { "edu:vegetable_type": type, "minecraft:cardinal_direction": dir })
     );
   }
 }

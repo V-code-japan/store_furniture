@@ -3656,7 +3656,7 @@ var BasketManager = class {
       throw new Error(`[BasketManager onPlace] ${ev.block.typeId}\u306E"minecraft:cardinal_direction\u304Cundefined\u3067\u3059`);
     }
     const perm = ev.block.setPermutation(
-      BlockPermutation2.resolve("edu:basket", { "edu:vegitable_type": type, "minecraft:cardinal_direction": dir })
+      BlockPermutation2.resolve("edu:basket", { "edu:vegetable_type": type, "minecraft:cardinal_direction": dir })
     );
   }
 };

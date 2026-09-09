@@ -83,13 +83,13 @@
           ]
         },
         {
-          "name": "vegitables",
+          "name": "vegetables",
           "parent": "bone",
           "pivot": [8, 0, -8]
         },
         {
-          "name": "vegitable1",
-          "parent": "vegitables",
+          "name": "vegetable1",
+          "parent": "vegetables",
           "pivot": [5.9, 2, -5],
           "cubes": [
             {
@@ -98,7 +98,7 @@
               "pivot": [5.9, 2, -5],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_1" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_1" }
               }
             },
             {
@@ -107,7 +107,7 @@
               "pivot": [5.9, 2, -3],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_1" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_1" }
               }
             },
             {
@@ -116,7 +116,7 @@
               "pivot": [5.9, 2, -1],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_1" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_1" }
               }
             },
             {
@@ -125,7 +125,7 @@
               "pivot": [5.9, 2, 1],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_1" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_1" }
               }
             },
             {
@@ -134,7 +134,7 @@
               "pivot": [5.9, 2, 3],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_1" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_1" }
               }
             },
             {
@@ -143,7 +143,7 @@
               "pivot": [5.9, 2, 5],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_1" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_1" }
               }
             },
             {
@@ -152,14 +152,14 @@
               "pivot": [5.9, 2, 7],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_1" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_1" }
               }
             }
           ]
         },
         {
-          "name": "vegitable2",
-          "parent": "vegitables",
+          "name": "vegetable2",
+          "parent": "vegetables",
           "pivot": [0.9, 2, -5],
           "cubes": [
             {
@@ -168,7 +168,7 @@
               "pivot": [0.9, 2, -5],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_2" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_2" }
               }
             },
             {
@@ -177,7 +177,7 @@
               "pivot": [0.9, 2, -3],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_2" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_2" }
               }
             },
             {
@@ -186,7 +186,7 @@
               "pivot": [0.9, 2, -1],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_2" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_2" }
               }
             },
             {
@@ -195,7 +195,7 @@
               "pivot": [0.9, 2, 1],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_2" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_2" }
               }
             },
             {
@@ -204,7 +204,7 @@
               "pivot": [0.9, 2, 3],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_2" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_2" }
               }
             },
             {
@@ -213,7 +213,7 @@
               "pivot": [0.9, 2, 5],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_2" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_2" }
               }
             },
             {
@@ -222,14 +222,14 @@
               "pivot": [0.9, 2, 7],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_2" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_2" }
               }
             }
           ]
         },
         {
-          "name": "vegitable3",
-          "parent": "vegitables",
+          "name": "vegetable3",
+          "parent": "vegetables",
           "pivot": [-4.1, 2, -5],
           "cubes": [
             {
@@ -238,7 +238,7 @@
               "pivot": [-4.1, 2, -5],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_3" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_3" }
               }
             },
             {
@@ -247,7 +247,7 @@
               "pivot": [-4.1, 2, -3],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_3" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_3" }
               }
             },
             {
@@ -256,7 +256,7 @@
               "pivot": [-4.1, 2, -1],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_3" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_3" }
               }
             },
             {
@@ -265,7 +265,7 @@
               "pivot": [-4.1, 2, 1],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_3" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_3" }
               }
             },
             {
@@ -274,7 +274,7 @@
               "pivot": [-4.1, 2, 3],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_3" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_3" }
               }
             },
             {
@@ -283,7 +283,7 @@
               "pivot": [-4.1, 2, 5],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_3" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_3" }
               }
             },
             {
@@ -292,7 +292,7 @@
               "pivot": [-4.1, 2, 7],
               "rotation": [-10, 0, 0],
               "uv": {
-                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegitable_3" }
+                "north": { "uv": [0, 1], "uv_size": [64, 63], "material_instance": "vegetable_3" }
               }
             }
           ]
