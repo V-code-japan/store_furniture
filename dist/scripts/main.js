@@ -3640,11 +3640,11 @@ var WalkInCoolerManager = class {
   }
 };
 
-// scripts/basket/basketManager.ts
+// scripts/display/displayManager.ts
 import { BlockPermutation as BlockPermutation2 } from "@minecraft/server";
-var BasketManager = class {
+var DisplayManager = class {
   static registerComponent(startupEv) {
-    startupEv.blockComponentRegistry.registerCustomComponent("edu:set_basket_state", {
+    startupEv.blockComponentRegistry.registerCustomComponent("edu:set_display_state", {
       onPlace: (ev) => this.onPlace(ev)
     });
   }
@@ -3655,16 +3655,26 @@ var BasketManager = class {
       sendSystemMessage(`[BasketManager onPlace] ${ev.block.typeId}\u306E"minecraft:cardinal_direction\u304Cundefined\u3067\u3059`);
       throw new Error(`[BasketManager onPlace] ${ev.block.typeId}\u306E"minecraft:cardinal_direction\u304Cundefined\u3067\u3059`);
     }
-    const perm = ev.block.setPermutation(
-      BlockPermutation2.resolve("edu:basket", { "edu:vegetable_type": type, "minecraft:cardinal_direction": dir })
-    );
+    if (ev.block.typeId === "edu:basket") {
+      ev.block.setPermutation(
+        BlockPermutation2.resolve("edu:basket", { "edu:display_type": type, "minecraft:cardinal_direction": dir })
+      );
+    } else if (ev.block.typeId === "edu:fish_display") {
+      ev.block.setPermutation(
+        BlockPermutation2.resolve("edu:fish_display", {
+          "edu:display_type": type,
+          "minecraft:cardinal_direction": dir
+          // "minecraft:cardinal_connection": connection,
+        })
+      );
+    }
   }
 };
 
 // scripts/main.ts
 system.beforeEvents.startup.subscribe((ev) => {
   WalkInCoolerManager.registerComponent(ev);
-  BasketManager.registerComponent(ev);
+  DisplayManager.registerComponent(ev);
 });
 system.afterEvents.scriptEventReceive.subscribe((ev) => {
   sendSystemMessage(`id: ${ev.id}, entity: ${ev.sourceEntity}`);

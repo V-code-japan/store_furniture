@@ -7,7 +7,7 @@
         "category": "construction"
       },
       "states": {
-        "edu:vegetable_type": [0, 1, 2]
+        "edu:display_type": [0, 1, 2]
       },
       "traits": {
         "minecraft:placement_direction": {
@@ -46,11 +46,11 @@
       "minecraft:light_emission": 6,
       "minecraft:map_color": "#5f4a2b",
       "tag:minecraft:is_pickaxe_item_destructible": {},
-      "minecraft:custom_components": ["edu:set_basket_state"]
+      "minecraft:custom_components": ["edu:set_display_state"]
     },
     "permutations": [
       {
-        "condition": "q.block_state('edu:vegetable_type') == 0",
+        "condition": "q.block_state('edu:display_type') == 0",
         "components": {
           "minecraft:material_instances": {
             "basket": {
@@ -74,7 +74,7 @@
       },
 
       {
-        "condition": "q.block_state('edu:vegetable_type') == 1",
+        "condition": "q.block_state('edu:display_type') == 1",
         "components": {
           "minecraft:material_instances": {
             "basket": {
@@ -98,7 +98,7 @@
       },
 
       {
-        "condition": "q.block_state('edu:vegetable_type') == 2",
+        "condition": "q.block_state('edu:display_type') == 2",
         "components": {
           "minecraft:material_instances": {
             "basket": {

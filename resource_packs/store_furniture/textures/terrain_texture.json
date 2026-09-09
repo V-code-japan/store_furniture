@@ -4,6 +4,39 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "fish_display_display": {
+      "textures": "textures/blocks/fish_display/display"
+    },
+    "fish_display_display_side_none": {
+      "textures": "textures/blocks/fish_display/display_side_none"
+    },
+    "fish_display_fish_clownfish_raw": {
+      "textures": "textures/blocks/fish_display/fish_display_fish_clownfish_raw"
+    },
+    "fish_display_fish_cooked": {
+      "textures": "textures/blocks/fish_display/fish_display_fish_cooked"
+    },
+    "fish_display_fish_pufferfish_raw": {
+      "textures": "textures/blocks/fish_display/fish_display_fish_pufferfish_raw"
+    },
+    "fish_display_fish_raw": {
+      "textures": "textures/blocks/fish_display/fish_display_fish_raw"
+    },
+    "fish_display_fish_salmon_cooked": {
+      "textures": "textures/blocks/fish_display/fish_display_fish_salmon_cooked"
+    },
+    "fish_display_fish_salmon_raw": {
+      "textures": "textures/blocks/fish_display/fish_display_fish_salmon_raw"
+    },
+    "fish_display_ink_sac": {
+      "textures": "textures/blocks/fish_display/fish_display_ink_sac"
+    },
+    "fish_display_kelp": {
+      "textures": "textures/blocks/fish_display/fish_display_kelp"
+    },
+    "fish_display_nautilus": {
+      "textures": "textures/blocks/fish_display/fish_display_nautilus"
+    },
     "basket": {
       "textures": "textures/blocks/basket/basket"
     },
