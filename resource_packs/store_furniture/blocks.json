@@ -1,5 +1,8 @@
 {
 	"format_version": "1.21.0",
+	"edu:shelf_vegitable": {
+		"sound": "wood"
+	},
 	"edu:microwave": {
 		"sound": "wood"
 	},

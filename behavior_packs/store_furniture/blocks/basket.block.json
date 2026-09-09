@@ -1,0 +1,146 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "edu:basket",
+      "menu_category": {
+        "category": "construction"
+      },
+      "states": {
+        "edu:vegitable_type": [0, 1, 2]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.65
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:geometry": "geometry.basket",
+      "minecraft:material_instances": {
+        "basket": {
+          "texture": "basket",
+          "render_method": "alpha_test"
+        },
+        "vegitable_1": {
+          "texture": "basket_apple",
+          "render_method": "alpha_test"
+        },
+        "vegitable_2": {
+          "texture": "basket_carrot",
+          "render_method": "alpha_test"
+        },
+        "vegitable_3": {
+          "texture": "basket_potato",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:light_emission": 6,
+      "minecraft:map_color": "#5f4a2b",
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "minecraft:custom_components": ["edu:set_basket_state"]
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('edu:vegetable_type') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "vegitable_1": {
+              "texture": "basket_apple",
+              "render_method": "alpha_test"
+            },
+            "vegitable_2": {
+              "texture": "basket_carrot",
+              "render_method": "alpha_test"
+            },
+            "vegitable_3": {
+              "texture": "basket_potato",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:vegetable_type') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "vegitable_1": {
+              "texture": "basket_beetroot",
+              "render_method": "alpha_test"
+            },
+            "vegitable_2": {
+              "texture": "basket_chorus_fruit",
+              "render_method": "alpha_test"
+            },
+            "vegitable_3": {
+              "texture": "basket_sweet_berries",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:vegetable_type') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "vegitable_1": {
+              "texture": "basket_melon",
+              "render_method": "alpha_test"
+            },
+            "vegitable_2": {
+              "texture": "basket_pumpkin",
+              "render_method": "alpha_test"
+            },
+            "vegitable_3": {
+              "texture": "basket_apple_golden",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      }
+    ]
+  }
+}
