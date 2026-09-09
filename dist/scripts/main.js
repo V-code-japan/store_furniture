@@ -3640,9 +3640,31 @@ var WalkInCoolerManager = class {
   }
 };
 
+// scripts/basket/basketManager.ts
+import { BlockPermutation as BlockPermutation2 } from "@minecraft/server";
+var BasketManager = class {
+  static registerComponent(startupEv) {
+    startupEv.blockComponentRegistry.registerCustomComponent("edu:set_basket_state", {
+      onPlace: (ev) => this.onPlace(ev)
+    });
+  }
+  static onPlace(ev) {
+    const type = Math.floor(Math.random() * 3);
+    const dir = ev.block.permutation.getState("minecraft:cardinal_direction");
+    if (dir === void 0) {
+      sendSystemMessage(`[BasketManager onPlace] ${ev.block.typeId}\u306E"minecraft:cardinal_direction\u304Cundefined\u3067\u3059`);
+      throw new Error(`[BasketManager onPlace] ${ev.block.typeId}\u306E"minecraft:cardinal_direction\u304Cundefined\u3067\u3059`);
+    }
+    const perm = ev.block.setPermutation(
+      BlockPermutation2.resolve("edu:basket", { "edu:vegitable_type": type, "minecraft:cardinal_direction": dir })
+    );
+  }
+};
+
 // scripts/main.ts
 system.beforeEvents.startup.subscribe((ev) => {
   WalkInCoolerManager.registerComponent(ev);
+  BasketManager.registerComponent(ev);
 });
 system.afterEvents.scriptEventReceive.subscribe((ev) => {
   sendSystemMessage(`id: ${ev.id}, entity: ${ev.sourceEntity}`);
