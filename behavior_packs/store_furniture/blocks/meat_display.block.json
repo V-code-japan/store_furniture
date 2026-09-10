@@ -1,0 +1,971 @@
+{
+  "format_version": "1.26.32",
+  "minecraft:block": {
+    "description": {
+      "identifier": "edu:meat_display",
+      "menu_category": {
+        "category": "construction"
+      },
+      "states": {
+        "edu:display_type": [0, 1, 2]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        },
+        "minecraft:connection": {
+          "enabled_states": ["minecraft:cardinal_connections"]
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.65
+      },
+
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+
+      "minecraft:geometry": "geometry.meat_display",
+
+      "minecraft:material_instances": {
+        "meat_display_display": {
+          "texture": "meat_display_display",
+          "render_method": "alpha_test"
+        },
+        "meat_display_display_east": {
+          "texture": "meat_display_display",
+          "render_method": "alpha_test"
+        },
+        "meat_display_display_west": {
+          "texture": "meat_display_display",
+          "render_method": "alpha_test"
+        },
+        "meat_1": {
+          "texture": "meat_display_beef_cooked",
+          "render_method": "alpha_test"
+        },
+        "meat_2": {
+          "texture": "meat_display_chicken_cooked",
+          "render_method": "alpha_test"
+        },
+        "meat_3": {
+          "texture": "meat_display_mutton_cooked",
+          "render_method": "alpha_test"
+        }
+      },
+
+      "minecraft:light_emission": 6,
+      "minecraft:map_color": "#5f4a2b",
+
+      "edu:set_display_state": {}
+    },
+
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_beef_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_chicken_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_mutton_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_rabbit_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_rabbit_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_rotten_flesh",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_rabbit_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_rabbit_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_rotten_flesh",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_rabbit_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_rabbit_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_rotten_flesh",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_rabbit_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_rabbit_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_rotten_flesh",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_rabbit_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_rabbit_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_rotten_flesh",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_rabbit_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_rabbit_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_rotten_flesh",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_rabbit_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_rabbit_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_rotten_flesh",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_rabbit_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_rabbit_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_rotten_flesh",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "meat_display_display": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_east": {
+              "texture": "meat_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "meat_display_display_west": {
+              "texture": "meat_display_display",
+              "render_method": "alpha_test"
+            },
+            "meat_1": {
+              "texture": "meat_display_rabbit_raw",
+              "render_method": "alpha_test"
+            },
+            "meat_2": {
+              "texture": "meat_display_rabbit_cooked",
+              "render_method": "alpha_test"
+            },
+            "meat_3": {
+              "texture": "meat_display_rotten_flesh",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

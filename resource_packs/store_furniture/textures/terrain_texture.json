@@ -4,6 +4,39 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "meat_display_display": {
+      "textures": "textures/blocks/meat_display/display"
+    },
+    "meat_display_display_side_none": {
+      "textures": "textures/blocks/meat_display/display_side_none"
+    },
+    "meat_display_beef_cooked": {
+      "textures": "textures/blocks/meat_display/meat_display_beef_cooked"
+    },
+    "meat_display_beef_raw": {
+      "textures": "textures/blocks/meat_display/meat_display_beef_raw"
+    },
+    "meat_display_chicken_cooked": {
+      "textures": "textures/blocks/meat_display/meat_display_chicken_cooked"
+    },
+    "meat_display_chicken_raw": {
+      "textures": "textures/blocks/meat_display/meat_display_chicken_raw"
+    },
+    "meat_display_mutton_cooked": {
+      "textures": "textures/blocks/meat_display/meat_display_mutton_cooked"
+    },
+    "meat_display_mutton_raw": {
+      "textures": "textures/blocks/meat_display/meat_display_mutton_raw"
+    },
+    "meat_display_rabbit_cooked": {
+      "textures": "textures/blocks/meat_display/meat_display_rabbit_cooked"
+    },
+    "meat_display_rabbit_raw": {
+      "textures": "textures/blocks/meat_display/meat_display_rabbit_raw"
+    },
+    "meat_display_rotten_flesh": {
+      "textures": "textures/blocks/meat_display/meat_display_rotten_flesh"
+    },
     "fish_display_display": {
       "textures": "textures/blocks/fish_display/display"
     },

@@ -3655,19 +3655,9 @@ var DisplayManager = class {
       sendSystemMessage(`[BasketManager onPlace] ${ev.block.typeId}\u306E"minecraft:cardinal_direction\u304Cundefined\u3067\u3059`);
       throw new Error(`[BasketManager onPlace] ${ev.block.typeId}\u306E"minecraft:cardinal_direction\u304Cundefined\u3067\u3059`);
     }
-    if (ev.block.typeId === "edu:basket") {
-      ev.block.setPermutation(
-        BlockPermutation2.resolve("edu:basket", { "edu:display_type": type, "minecraft:cardinal_direction": dir })
-      );
-    } else if (ev.block.typeId === "edu:fish_display") {
-      ev.block.setPermutation(
-        BlockPermutation2.resolve("edu:fish_display", {
-          "edu:display_type": type,
-          "minecraft:cardinal_direction": dir
-          // "minecraft:cardinal_connection": connection,
-        })
-      );
-    }
+    ev.block.setPermutation(
+      BlockPermutation2.resolve(ev.block.typeId, { "edu:display_type": type, "minecraft:cardinal_direction": dir })
+    );
   }
 };
 
