@@ -1,4 +1,4 @@
-import { BlockComponentOnPlaceEvent, BlockPermutation, StartupEvent } from "@minecraft/server";
+import { BlockComponentOnPlaceEvent, BlockPermutation, StartupEvent, system } from "@minecraft/server";
 import { sendSystemMessage } from "../util/util";
 import { BlockStateSuperset } from "@minecraft/vanilla-data";
 
@@ -14,13 +14,12 @@ export class DisplayManager {
     const type = Math.floor(Math.random() * 3);
     // 現在のdirectionを取得
     const dir = ev.block.permutation.getState("minecraft:cardinal_direction");
+    const perm = ev.block.permutation;
 
     if (dir === undefined) {
       sendSystemMessage(`[BasketManager onPlace] ${ev.block.typeId}の"minecraft:cardinal_directionがundefinedです`);
       throw new Error(`[BasketManager onPlace] ${ev.block.typeId}の"minecraft:cardinal_directionがundefinedです`);
     }
-    ev.block.setPermutation(
-      BlockPermutation.resolve(ev.block.typeId, { "edu:display_type": type, "minecraft:cardinal_direction": dir })
-    );
+    ev.block.setPermutation(perm.withState("edu:display_type" as keyof BlockStateSuperset, type));
   }
 }

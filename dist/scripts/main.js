@@ -3641,7 +3641,6 @@ var WalkInCoolerManager = class {
 };
 
 // scripts/display/displayManager.ts
-import { BlockPermutation as BlockPermutation2 } from "@minecraft/server";
 var DisplayManager = class {
   static registerComponent(startupEv) {
     startupEv.blockComponentRegistry.registerCustomComponent("edu:set_display_state", {
@@ -3651,13 +3650,12 @@ var DisplayManager = class {
   static onPlace(ev) {
     const type = Math.floor(Math.random() * 3);
     const dir = ev.block.permutation.getState("minecraft:cardinal_direction");
+    const perm = ev.block.permutation;
     if (dir === void 0) {
       sendSystemMessage(`[BasketManager onPlace] ${ev.block.typeId}\u306E"minecraft:cardinal_direction\u304Cundefined\u3067\u3059`);
       throw new Error(`[BasketManager onPlace] ${ev.block.typeId}\u306E"minecraft:cardinal_direction\u304Cundefined\u3067\u3059`);
     }
-    ev.block.setPermutation(
-      BlockPermutation2.resolve(ev.block.typeId, { "edu:display_type": type, "minecraft:cardinal_direction": dir })
-    );
+    ev.block.setPermutation(perm.withState("edu:display_type", type));
   }
 };
 

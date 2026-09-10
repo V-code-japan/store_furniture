@@ -18,21 +18,16 @@
         }
       }
     },
-
     "components": {
       "minecraft:collision_box": true,
       "minecraft:selection_box": true,
-
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.65
       },
-
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 15
       },
-
       "minecraft:geometry": "geometry.fish_display",
-
       "minecraft:material_instances": {
         "fish_display_display": {
           "texture": "fish_display_display",
@@ -59,13 +54,10 @@
           "render_method": "alpha_test"
         }
       },
-
       "minecraft:light_emission": 6,
       "minecraft:map_color": "#5f4a2b",
-
       "edu:set_display_state": {}
     },
-
     "permutations": [
       {
         "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
@@ -75,7 +67,6 @@
           }
         }
       },
-
       {
         "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
         "components": {
@@ -84,7 +75,6 @@
           }
         }
       },
-
       {
         "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
         "components": {
@@ -93,7 +83,6 @@
           }
         }
       },
-
       {
         "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
         "components": {
@@ -102,7 +91,6 @@
           }
         }
       },
-
       {
         "condition": "q.block_state('edu:display_type') == 0",
         "components": {
@@ -134,263 +122,6 @@
           }
         }
       },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_east')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_cooked",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_kelp",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_cooked",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_kelp",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_cooked",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_kelp",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_west')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_cooked",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_kelp",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_cooked",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_kelp",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_south')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_cooked",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_kelp",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_north')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_cooked",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_kelp",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_cooked",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_kelp",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
       {
         "condition": "q.block_state('edu:display_type') == 1",
         "components": {
@@ -422,263 +153,6 @@
           }
         }
       },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_east')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_clownfish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_salmon_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_fish_salmon_cooked",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_clownfish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_salmon_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_fish_salmon_cooked",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_clownfish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_salmon_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_fish_salmon_cooked",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_west')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_clownfish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_salmon_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_fish_salmon_cooked",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_clownfish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_salmon_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_fish_salmon_cooked",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_south')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_clownfish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_salmon_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_fish_salmon_cooked",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_north')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_clownfish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_salmon_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_fish_salmon_cooked",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_fish_clownfish_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_fish_salmon_raw",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_fish_salmon_cooked",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
       {
         "condition": "q.block_state('edu:display_type') == 2",
         "components": {
@@ -710,9 +184,783 @@
           }
         }
       },
-
       {
-        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_east')",
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && !q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'north' && !q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'south' && !q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'east' && !q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'west' && !q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 0 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_cooked",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_kelp",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && !q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'north' && !q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'south' && !q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'east' && !q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'west' && !q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 1 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_fish_clownfish_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_fish_salmon_raw",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_salmon_cooked",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && !q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_ink_sac",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_nautilus",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_pufferfish_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'north' && !q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
         "components": {
           "minecraft:material_instances": {
             "fish_display_display": {
@@ -742,9 +990,39 @@
           }
         }
       },
-
       {
-        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west')",
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_ink_sac",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_nautilus",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_pufferfish_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')",
         "components": {
           "minecraft:material_instances": {
             "fish_display_display": {
@@ -774,41 +1052,8 @@
           }
         }
       },
-
       {
-        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east')",
-        "components": {
-          "minecraft:material_instances": {
-            "fish_display_display": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_east": {
-              "texture": "fish_display_display_side_none",
-              "render_method": "alpha_test"
-            },
-            "fish_display_display_west": {
-              "texture": "fish_display_display",
-              "render_method": "alpha_test"
-            },
-            "fish_1": {
-              "texture": "fish_display_ink_sac",
-              "render_method": "alpha_test"
-            },
-            "fish_2": {
-              "texture": "fish_display_nautilus",
-              "render_method": "alpha_test"
-            },
-            "fish_3": {
-              "texture": "fish_display_fish_pufferfish_raw",
-              "render_method": "alpha_test"
-            }
-          }
-        }
-      },
-
-      {
-        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_west')",
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'south' && !q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
         "components": {
           "minecraft:material_instances": {
             "fish_display_display": {
@@ -838,9 +1083,39 @@
           }
         }
       },
-
       {
-        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north')",
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_ink_sac",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_nautilus",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_pufferfish_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south')",
         "components": {
           "minecraft:material_instances": {
             "fish_display_display": {
@@ -870,9 +1145,8 @@
           }
         }
       },
-
       {
-        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_south')",
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'east' && !q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
         "components": {
           "minecraft:material_instances": {
             "fish_display_display": {
@@ -902,9 +1176,70 @@
           }
         }
       },
-
       {
-        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_north')",
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_ink_sac",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_nautilus",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_pufferfish_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:material_instances": {
+            "fish_display_display": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_east": {
+              "texture": "fish_display_display_side_none",
+              "render_method": "alpha_test"
+            },
+            "fish_display_display_west": {
+              "texture": "fish_display_display",
+              "render_method": "alpha_test"
+            },
+            "fish_1": {
+              "texture": "fish_display_ink_sac",
+              "render_method": "alpha_test"
+            },
+            "fish_2": {
+              "texture": "fish_display_nautilus",
+              "render_method": "alpha_test"
+            },
+            "fish_3": {
+              "texture": "fish_display_fish_pufferfish_raw",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'west' && !q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
         "components": {
           "minecraft:material_instances": {
             "fish_display_display": {
@@ -934,9 +1269,8 @@
           }
         }
       },
-
       {
-        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south')",
+        "condition": "q.block_state('edu:display_type') == 2 && q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
         "components": {
           "minecraft:material_instances": {
             "fish_display_display": {
@@ -948,7 +1282,7 @@
               "render_method": "alpha_test"
             },
             "fish_display_display_west": {
-              "texture": "fish_display_display",
+              "texture": "fish_display_display_side_none",
               "render_method": "alpha_test"
             },
             "fish_1": {
