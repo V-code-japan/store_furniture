@@ -4,6 +4,15 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "bread_shelf_body": {
+      "textures": "textures/blocks/bread_shelf/bread_shelf_body"
+    },
+    "bread_shelf_basket": {
+      "textures": "textures/blocks/bread_shelf/bread_shelf_basket"
+    },
+    "bread_shelf_bread": {
+      "textures": "textures/blocks/bread_shelf/bread_shelf_bread"
+    },
     "meat_display_display": {
       "textures": "textures/blocks/meat_display/display"
     },

@@ -1,0 +1,540 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bread_shelf",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bones",
+					"pivot": [8, 0, -8]
+				},
+				{
+					"name": "basket",
+					"parent": "bones",
+					"pivot": [0.4, 3, -7],
+					"rotation": [12.5, 0, 0]
+				},
+				{
+					"name": "basket2",
+					"parent": "basket",
+					"pivot": [6.4, 1, -6],
+					"cubes": [
+						{
+							"origin": [6.4, 1, -7],
+							"size": [1, 2, 14],
+							"uv": {
+								"north": {"uv": [0, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [13, 0], "uv_size": [14, 2], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [1, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [13, 2], "uv_size": [14, 2], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [13, 16], "uv_size": [1, 14], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [14, 30], "uv_size": [1, -14], "material_instance": "bread_shelf_basket"}
+							}
+						},
+						{
+							"origin": [-7.6, 1, -7],
+							"size": [1, 2, 14],
+							"uv": {
+								"north": {"uv": [2, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [13, 4], "uv_size": [14, 2], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [3, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [13, 6], "uv_size": [14, 2], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [15, 16], "uv_size": [1, 14], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [16, 30], "uv_size": [1, -14], "material_instance": "bread_shelf_basket"}
+							}
+						},
+						{
+							"origin": [-6.6, 1, 6],
+							"size": [13, 2, 1],
+							"uv": {
+								"north": {"uv": [13, 8], "uv_size": [13, 2], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [4, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [13, 10], "uv_size": [13, 2], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [5, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [17, 16], "uv_size": [13, 1], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [17, 18], "uv_size": [13, -1], "material_instance": "bread_shelf_basket"}
+							}
+						},
+						{
+							"origin": [-6.6, 1, -7],
+							"size": [13, 2, 1],
+							"uv": {
+								"north": {"uv": [13, 12], "uv_size": [13, 2], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [6, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [13, 14], "uv_size": [13, 2], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [7, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [17, 18], "uv_size": [13, 1], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [17, 20], "uv_size": [13, -1], "material_instance": "bread_shelf_basket"}
+							}
+						},
+						{
+							"origin": [-6.6, 0, -6],
+							"size": [13, 1, 12],
+							"uv": {
+								"north": {"uv": [17, 20], "uv_size": [13, 1], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [17, 22], "uv_size": [12, 1], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [17, 21], "uv_size": [13, 1], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [17, 23], "uv_size": [12, 1], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [0, 0], "uv_size": [13, 12], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [0, 24], "uv_size": [13, -12], "material_instance": "bread_shelf_basket"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bread_1",
+					"parent": "basket",
+					"pivot": [-7.2, -3, -8],
+					"cubes": [
+						{
+							"origin": [1.8, 2, -5],
+							"size": [4, 4, 0],
+							"pivot": [3.8, 2, -5],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_1"}
+							}
+						},
+						{
+							"origin": [1.8, 2, -2],
+							"size": [4, 4, 0],
+							"pivot": [3.8, 2, -2],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_1"}
+							}
+						},
+						{
+							"origin": [1.8, 2, 1],
+							"size": [4, 4, 0],
+							"pivot": [3.8, 2, 1],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_1"}
+							}
+						},
+						{
+							"origin": [1.8, 2, 4],
+							"size": [4, 4, 0],
+							"pivot": [3.8, 2, 4],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_1"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bread_2",
+					"parent": "basket",
+					"pivot": [-11.2, -3, -8],
+					"cubes": [
+						{
+							"origin": [-2.2, 2, -5],
+							"size": [4, 4, 0],
+							"pivot": [-0.2, 2, -5],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_2"}
+							}
+						},
+						{
+							"origin": [-2.2, 2, -2],
+							"size": [4, 4, 0],
+							"pivot": [-0.2, 2, -2],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_2"}
+							}
+						},
+						{
+							"origin": [-2.2, 2, 1],
+							"size": [4, 4, 0],
+							"pivot": [-0.2, 2, 1],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_2"}
+							}
+						},
+						{
+							"origin": [-2.2, 2, 4],
+							"size": [4, 4, 0],
+							"pivot": [-0.2, 2, 4],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_2"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bread_3",
+					"parent": "basket",
+					"pivot": [-15.2, -3, -8],
+					"cubes": [
+						{
+							"origin": [-6.2, 2, -5],
+							"size": [4, 4, 0],
+							"pivot": [-4.2, 2, -5],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_3"}
+							}
+						},
+						{
+							"origin": [-6.2, 2, -2],
+							"size": [4, 4, 0],
+							"pivot": [-4.2, 2, -2],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_3"}
+							}
+						},
+						{
+							"origin": [-6.2, 2, 1],
+							"size": [4, 4, 0],
+							"pivot": [-4.2, 2, 1],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_3"}
+							}
+						},
+						{
+							"origin": [-6.2, 2, 4],
+							"size": [4, 4, 0],
+							"pivot": [-4.2, 2, 4],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_3"}
+							}
+						}
+					]
+				},
+				{
+					"name": "basket3",
+					"parent": "bones",
+					"pivot": [0.4, 11, -7],
+					"rotation": [12.5, 0, 0]
+				},
+				{
+					"name": "basket4",
+					"parent": "basket3",
+					"pivot": [6.4, 9, -6],
+					"cubes": [
+						{
+							"origin": [6.4, 9, -7],
+							"size": [1, 2, 14],
+							"uv": {
+								"north": {"uv": [0, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [13, 0], "uv_size": [14, 2], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [1, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [13, 2], "uv_size": [14, 2], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [13, 16], "uv_size": [1, 14], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [14, 30], "uv_size": [1, -14], "material_instance": "bread_shelf_basket"}
+							}
+						},
+						{
+							"origin": [-7.6, 9, -7],
+							"size": [1, 2, 14],
+							"uv": {
+								"north": {"uv": [2, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [13, 4], "uv_size": [14, 2], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [3, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [13, 6], "uv_size": [14, 2], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [15, 16], "uv_size": [1, 14], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [16, 30], "uv_size": [1, -14], "material_instance": "bread_shelf_basket"}
+							}
+						},
+						{
+							"origin": [-6.6, 9, 6],
+							"size": [13, 2, 1],
+							"uv": {
+								"north": {"uv": [13, 8], "uv_size": [13, 2], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [4, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [13, 10], "uv_size": [13, 2], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [5, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [17, 16], "uv_size": [13, 1], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [17, 18], "uv_size": [13, -1], "material_instance": "bread_shelf_basket"}
+							}
+						},
+						{
+							"origin": [-6.6, 9, -7],
+							"size": [13, 2, 1],
+							"uv": {
+								"north": {"uv": [13, 12], "uv_size": [13, 2], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [6, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [13, 14], "uv_size": [13, 2], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [7, 24], "uv_size": [1, 2], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [17, 18], "uv_size": [13, 1], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [17, 20], "uv_size": [13, -1], "material_instance": "bread_shelf_basket"}
+							}
+						},
+						{
+							"origin": [-6.6, 8, -6],
+							"size": [13, 1, 12],
+							"uv": {
+								"north": {"uv": [17, 20], "uv_size": [13, 1], "material_instance": "bread_shelf_basket"},
+								"east": {"uv": [17, 22], "uv_size": [12, 1], "material_instance": "bread_shelf_basket"},
+								"south": {"uv": [17, 21], "uv_size": [13, 1], "material_instance": "bread_shelf_basket"},
+								"west": {"uv": [17, 23], "uv_size": [12, 1], "material_instance": "bread_shelf_basket"},
+								"up": {"uv": [0, 0], "uv_size": [13, 12], "material_instance": "bread_shelf_basket"},
+								"down": {"uv": [0, 24], "uv_size": [13, -12], "material_instance": "bread_shelf_basket"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bread_4",
+					"parent": "basket3",
+					"pivot": [-7.2, 5, -8],
+					"cubes": [
+						{
+							"origin": [1.8, 10, -5],
+							"size": [4, 4, 0],
+							"pivot": [3.8, 10, -5],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_1"}
+							}
+						},
+						{
+							"origin": [1.8, 10, -2],
+							"size": [4, 4, 0],
+							"pivot": [3.8, 10, -2],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_1"}
+							}
+						},
+						{
+							"origin": [1.8, 10, 1],
+							"size": [4, 4, 0],
+							"pivot": [3.8, 10, 1],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_1"}
+							}
+						},
+						{
+							"origin": [1.8, 10, 4],
+							"size": [4, 4, 0],
+							"pivot": [3.8, 10, 4],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_1"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bread_5",
+					"parent": "basket3",
+					"pivot": [-11.2, 5, -8],
+					"cubes": [
+						{
+							"origin": [-2.2, 10, -5],
+							"size": [4, 4, 0],
+							"pivot": [-0.2, 10, -5],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_2"}
+							}
+						},
+						{
+							"origin": [-2.2, 10, -2],
+							"size": [4, 4, 0],
+							"pivot": [-0.2, 10, -2],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_2"}
+							}
+						},
+						{
+							"origin": [-2.2, 10, 1],
+							"size": [4, 4, 0],
+							"pivot": [-0.2, 10, 1],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_2"}
+							}
+						},
+						{
+							"origin": [-2.2, 10, 4],
+							"size": [4, 4, 0],
+							"pivot": [-0.2, 10, 4],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_2"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bread_6",
+					"parent": "basket3",
+					"pivot": [-15.2, 5, -8],
+					"cubes": [
+						{
+							"origin": [-6.2, 10, -5],
+							"size": [4, 4, 0],
+							"pivot": [-4.2, 10, -5],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_3"}
+							}
+						},
+						{
+							"origin": [-6.2, 10, -2],
+							"size": [4, 4, 0],
+							"pivot": [-4.2, 10, -2],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "bread_3"}
+							}
+						},
+						{
+							"origin": [-6.2, 10, 1],
+							"size": [4, 4, 0],
+							"pivot": [-4.2, 10, 1],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_3"}
+							}
+						},
+						{
+							"origin": [-6.2, 10, 4],
+							"size": [4, 4, 0],
+							"pivot": [-4.2, 10, 4],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [0.5, 0], "uv_size": [31.5, 32], "material_instance": "bread_3"}
+							}
+						}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "bones",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [7.5, 0, 7],
+							"size": [0.5, 16, 1],
+							"uv": {
+								"north": {"uv": [7.5, 0], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"east": {"uv": [8, 0], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"south": {"uv": [7.5, 8], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"west": {"uv": [8, 8], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"up": {"uv": [0.5, 13.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"down": {"uv": [1, 14], "uv_size": [0.5, -0.5], "material_instance": "bread_shelf_body"}
+							}
+						},
+						{
+							"origin": [-7.5, 3, 7],
+							"size": [15, 13, 1],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [7.5, 6.5], "material_instance": "bread_shelf_body"},
+								"east": {"uv": [13, 11.5], "uv_size": [0.5, 6.5], "material_instance": "bread_shelf_body"},
+								"south": {"uv": [0, 6.5], "uv_size": [7.5, 6.5], "material_instance": "bread_shelf_body"},
+								"west": {"uv": [0, 13.5], "uv_size": [0.5, 6.5], "material_instance": "bread_shelf_body"},
+								"up": {"uv": [11.5, 0], "uv_size": [7.5, 0.5], "material_instance": "bread_shelf_body"},
+								"down": {"uv": [11.5, 1], "uv_size": [7.5, -0.5], "material_instance": "bread_shelf_body"}
+							}
+						},
+						{
+							"origin": [-8, 0, 7],
+							"size": [0.5, 16, 1],
+							"uv": {
+								"north": {"uv": [8.5, 0], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"east": {"uv": [8.5, 8], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"south": {"uv": [9, 0], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"west": {"uv": [9, 8], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"up": {"uv": [1.5, 13.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"down": {"uv": [2, 14], "uv_size": [0.5, -0.5], "material_instance": "bread_shelf_body"}
+							}
+						},
+						{
+							"origin": [-8, 0, -8],
+							"size": [0.5, 16, 1],
+							"uv": {
+								"north": {"uv": [9.5, 0], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"east": {"uv": [9.5, 8], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"south": {"uv": [10, 0], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"west": {"uv": [10, 8], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"up": {"uv": [2.5, 13.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"down": {"uv": [3, 14], "uv_size": [0.5, -0.5], "material_instance": "bread_shelf_body"}
+							}
+						},
+						{
+							"origin": [7.5, 0, -8],
+							"size": [0.5, 16, 1],
+							"uv": {
+								"north": {"uv": [10.5, 0], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"east": {"uv": [10.5, 8], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"south": {"uv": [11, 0], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"west": {"uv": [11, 8], "uv_size": [0.5, 8], "material_instance": "bread_shelf_body"},
+								"up": {"uv": [3.5, 13.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"down": {"uv": [4, 14], "uv_size": [0.5, -0.5], "material_instance": "bread_shelf_body"}
+							}
+						},
+						{
+							"origin": [7.5, 15, -7],
+							"size": [0.5, 1, 14],
+							"uv": {
+								"north": {"uv": [4.5, 13.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"east": {"uv": [11.5, 1], "uv_size": [7, 0.5], "material_instance": "bread_shelf_body"},
+								"south": {"uv": [13.5, 4.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"west": {"uv": [11.5, 1.5], "uv_size": [7, 0.5], "material_instance": "bread_shelf_body"},
+								"up": {"uv": [11.5, 2], "uv_size": [0.5, 7], "material_instance": "bread_shelf_body"},
+								"down": {"uv": [11.5, 16], "uv_size": [0.5, -7], "material_instance": "bread_shelf_body"}
+							}
+						},
+						{
+							"origin": [-8, 15, -7],
+							"size": [0.5, 1, 14],
+							"uv": {
+								"north": {"uv": [5, 13.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"east": {"uv": [12, 2], "uv_size": [7, 0.5], "material_instance": "bread_shelf_body"},
+								"south": {"uv": [13.5, 5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"west": {"uv": [12, 2.5], "uv_size": [7, 0.5], "material_instance": "bread_shelf_body"},
+								"up": {"uv": [12, 3], "uv_size": [0.5, 7], "material_instance": "bread_shelf_body"},
+								"down": {"uv": [12, 17], "uv_size": [0.5, -7], "material_instance": "bread_shelf_body"}
+							}
+						},
+						{
+							"origin": [-8, 3, -7],
+							"size": [0.5, 1, 14],
+							"uv": {
+								"north": {"uv": [5.5, 13.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"east": {"uv": [12.5, 3], "uv_size": [7, 0.5], "material_instance": "bread_shelf_body"},
+								"south": {"uv": [13.5, 5.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"west": {"uv": [12.5, 3.5], "uv_size": [7, 0.5], "material_instance": "bread_shelf_body"},
+								"up": {"uv": [12.5, 4], "uv_size": [0.5, 7], "material_instance": "bread_shelf_body"},
+								"down": {"uv": [12.5, 18], "uv_size": [0.5, -7], "material_instance": "bread_shelf_body"}
+							}
+						},
+						{
+							"origin": [7.5, 3, -7],
+							"size": [0.5, 1, 14],
+							"uv": {
+								"north": {"uv": [6, 13.5], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"east": {"uv": [0, 13], "uv_size": [7, 0.5], "material_instance": "bread_shelf_body"},
+								"south": {"uv": [13.5, 6], "uv_size": [0.5, 0.5], "material_instance": "bread_shelf_body"},
+								"west": {"uv": [13, 4], "uv_size": [7, 0.5], "material_instance": "bread_shelf_body"},
+								"up": {"uv": [13, 4.5], "uv_size": [0.5, 7], "material_instance": "bread_shelf_body"},
+								"down": {"uv": [7, 20], "uv_size": [0.5, -7], "material_instance": "bread_shelf_body"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
